@@ -1,0 +1,58 @@
+#include<stdio.h>
+
+int main(){
+    
+    printf("####### Movimento da torre! #######\n");
+    
+    int torre = 1;//inicialização da variável
+    while (torre <=5)//começo do loop while
+    {
+        printf("Direita %d\n",torre);
+        torre++;//incremento feito para interromper o loop
+    
+    }
+    printf("termino do movimento da Torre\n");//aviso do fim da execução
+
+    printf("####### Movimento da raimha! #######\n");
+
+    for ( int rainha = 1; rainha <= 8; rainha++)//nesse caso a variável foi inicializada, o loop já ocorreu e o incremento foi acrescentado
+    {
+        printf("Esquerda %d\n", rainha);
+    }
+    printf("Termino do movimento da Rainha\n");//final da execução
+
+    printf("####### Movimento do bispo! #######\n");
+
+    int bispo = 1;//iniciazação da variável
+
+    do
+    {
+        printf("Cima,Direita\n",bispo);//imprimirá o valor atual da variavel
+        bispo++;//incremento
+
+    } while (bispo <= 5);//repetirá o "cima,direita" até o número 5
+    printf("Termino do movimento do Bispo\n");//fim da execução do código
+    
+    printf("####### Movimento do cavalo!#######\n");
+
+    const int cavalo_baixo = 2;//estão em constantes pois o movimento do cavalo é fixo 
+    const int cavalo_esquerda = 1;
+    
+    int i;//contador do for 
+    int j = 0;//contador do while 
+
+    for (int i = 0; i < cavalo_baixo; i++)
+    {
+        printf("Baixo\n");
+    }
+          while (j < cavalo_esquerda)
+    {
+        printf("Esquerda\n");
+        j++;
+          
+    }
+    printf("termino do movimento do cavalo");
+
+    return 0;
+    
+}
